@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+
+:root {
+  --softBlue: hsl(231, 69%, 60%);
+  --softRed: hsl(0, 94%, 66%);
+  --grayishBlue: hsl(229, 8%, 60%);
+  --veryDarkBlue: hsl(229, 31%, 21%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  outline: none;
+}
+
+
+/*navbar------------------------------------------------------------------------------*/
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.container-svg{
+  padding-left: 4rem;
+ }
+
+.container-svg svg{
+ }
+
+ 
+.navbar {
+  padding-right: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.svg{
+  margin-right: 1rem;
+}
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-list a {
+  text-decoration: none;
+}
+.navbar-list li {
+  margin: 0 1.5rem;
+}
+.navbar-singleItem a {
+  color: var(--veryDarkBlue);
+  transition: all 0.7s ease;
+}
+
+.navbar-singleItem a:hover {
+  color: var(--softRed);
+}
+
+.navbar-login {
+  color: white;
+  background-color: var(--softRed);
+  padding: 0.7rem 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition: all 0.7s ease;
+}
+
+.navbar-login:hover {
+  color: var(--softRed);
+  background-color: white;
+  border: 2px solid var(--softRed);
+}
+.navbar-button {
+  display: none;
+}
+
+ .navbar-icons {
+  display: none;
+}
+/*
+@media screen and (max-width: 735px) {
+ 
+.navbar-show{
+width: 100vh;
+}
+
+.navbar-list{
+  width: 0;
+  
+
+}
+
+/*
+    .svg path {
+      fill: white;
+    }
+    .svg g circle {
+      fill: white;
+    }
+    .svg g g path {
+      fill: hsla(228, 32%, 21%, 0.9);
+    }
+*/
+
+   
+ 
+
+  .navbar-singleItem a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.7s ease;
+  }
+
+  /* icons social Media*/
+  .navbar-icons {
+    margin: 3rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+   }
+  .navbar-icons a {
+    color: white;
+    font-size: 30px;
+    transition: all 0.7s ease;
+  }
+
+  .navbar-icons a:hover {
+    color: var(--softRed);
+  }
+
+  .navbar-login {
+    color: white;
+    background-color: transparent;
+    padding: 0.7rem 8rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: all 0.7s ease;
+    width: 100%;
+  }
+
+  .navbar-login:hover {
+    color: var(--softRed);
+    background-color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid var(--softRed);
+    color: var(--softRed);
+  }
+
+  /*navbar button sandwich*/
+  .navbar-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 24px;
+    width: 28px;
+    cursor: pointer;
+    position: absolute;
+    right: 15%;
+    top: 7%;
+  }
+
+  .navbar-button:hover  .navbar-button_line1,
+  .navbar-button:hover  .navbar-button_line2,
+  .navbar-button:hover  .navbar-button_line3{
+    background: var(--softRed);
+  }
+
+  .navbar-button_line1,
+  .navbar-button_line2,
+  .navbar-button_line3 {
+    width: 20px;
+    height: 3px;
+    background-color: var(--veryDarkBlue);
+    transition: all 0.7s ease;
+  }
+
+  .change .navbar-button_line1 {
+    transform: rotate(-45deg) translate(-7px, 7px);
+    background: red;
+  }
+
+  .change .navbar-button_line2 {
+    opacity: 0;
+  }
+
+  .change .navbar-button_line3{
+    transform: rotate(45deg) translate(-2px, -2px);
+    background: red;
+  }
+
+   .svg {
+    align-self: flex-start;
+  }
+}
+/*end navbar----------------------------------------------------------------------------*/
+
+/*atribution
+ .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+ */
